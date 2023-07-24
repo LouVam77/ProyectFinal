@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.todoo {
+    background-image: url('https://1.bp.blogspot.com/-6ozfGKvS2eg/XS4HXo4uJmI/AAAAAAAAH08/WbkSswDvG8YLKJHefaiYKfJ-aGAFpipwgCLcBGAs/s1600/mapa-mundi-google-maps.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fondo fijo */
+    min-height: 100vh;
+}
+
+.h54 {
+    font-size: 16px;
+    width: 30%;
+    font-weight: 450;
+    font-family: 'Lugrasimo', cursive;
+}
+
+.diver {
+    width: 10%;
+}
+
+
+.one {
+    margin-top: 70px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+svg {
+    margin-right: 5px;
+}
+
+.lista {
+    z-index: 2;
+    margin-right: 10%;
+    margin-top: 10px;;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,41 @@
+<body>
+<div class="todooo">
+  <form class="row g-3 custom-width">
+  <div class="col-md-12">
+      <div class="col-md-3">
+        <label for="input12" class="form-label">Género</label>
+        <input type="number" min="1" max="2" class="form-control" placeholder="1-Female/2-Male" id="input12" [(ngModel)]="genero" name="genero">
+      </div>
+  </div>
+      <div class="col-md-5">
+        <label for="inputEmail4" class="form-label">Nombre</label>
+        <input type="text" class="form-control" placeholder="First Name" [(ngModel)]="nombre" name="nombre">
+      </div>
+      <div class="col-md-5">
+        <label for="inputPassword4" class="form-label">Apellido</label>
+        <input type="text" class="form-control" placeholder="Last name" [(ngModel)]="apellido" name="apellido">
+      </div>
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <label for="inputAddress" class="form-label">Cargo</label>
+        <input type="text" class="form-control" [(ngModel)]="cargo" name="cargo">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="inputZip" class="form-label">Profesión</label>
+      <input type="text" class="form-control" id="inputZip" [(ngModel)]="profesion" name="profesion">
+    </div>
+    <div class="col-md-12" style="display: flex; justify-content: space-between;">
+      <div>
+        <button type="submit" id="cute" class="btn btn-success" style="font-size: 14px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: rgb(78, 255, 78); border: rgb(78, 255, 78);" (click)="add()">Agregar</button>
+        <a class="btn btn-dark" id="cute" routerLink="/list" style="font-size: 14px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Cancelar</a>
+      </div>
+      <a class="btn btn-dark" routerLink="/" style="margin-top: 20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+        </svg>
+      </a>
+    </div>
+  </form>
+</div>
+</body>

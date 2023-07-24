@@ -1,0 +1,20 @@
+<body>
+  <div class="todoo">
+    <app-search (search)="handleSearch($event)"></app-search>
+    <div class="row g-0 text-center one" *ngFor="let item of paises | search: filtre_valor">
+      <h5 class=" col-sm-6 col-md-8 h54"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg>{{ item.name.common }}</h5>
+    <div class="diver">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+    </div>
+    <ul class="col-6 col-md-4 lista">
+      <li class="card-text fst-italic" style="font-size: 12px;">Nombre oficial: <br><span style="font-size: 16px;">{{ item.name.official }}</span></li>
+      <li class="card-text fst-italic" style="font-size: 12px;">Còdigo de letras: <br><span style="font-size: 16px;">{{ item.cca2 }}</span></li>
+      <li class="card-text fst-italic" style="font-size: 12px;">Capital: <br><span style="font-size: 16px;">{{ item.capital }}</span></li>
+    </ul>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,38 @@
+<body>
+  <div class="todoo">
+    <div class="col-12 text-end divpriv container">
+      <a class="btn btn-primary mt-5" routerLink="/add">
+          Agregar
+      </a>
+    </div>
+    <div class="row col-md-12 divsec">
+      <div class="card cua" style="width: 18rem; margin: 10px;" *ngFor="let item of emple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle icon1 cen card-img-top" style="margin-top: 20px;" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg> 
+        <p class="card-text fst-italic taman" style="text-align: center;">{{ item.Genero }}</p>
+        <div class="card-body">
+          <p class="card-title fw-semibold" style="text-align: center;">{{ item.Nombre }} <span> {{ item.Apellido }} </span></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fst-italic" style="font-size: 14px;">{{ item.Profesion}}</li>
+          <li class="list-group-item fst-italic" style="font-size: 14px;"><span class="fw-normal" style="font-size: 14px; font-weight: 200;">Cargo:</span> {{ item.Cargo }}</li>
+        </ul>
+        <div class="card-body botones">
+          <button type="button" class="btn btn-danger b-ganger" (click)="delete(item)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-x icon" viewBox="0 0 16 16">
+              <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
+              <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-.646-4.854.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 0 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 .708-.708Z"/>
+           </svg>
+           </button>
+           <a class="btn btn-info b-info" routerLink="/empleados/edit/{{item.id}}" style="margin-left: 2px;">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-gear icon" viewBox="0 0 16 16">
+               <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Zm9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/>
+             </svg>
+           </a>
+        </div>
+       </div>
+     </div>
+  </div>
+</body>
