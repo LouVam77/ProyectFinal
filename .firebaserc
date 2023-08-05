@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "profinal-fe74b"
+  },
+  "targets": {
+    "profinal-fe74b": {
+      "hosting": {
+        "EndProyect": [
+          "profinal-fe74b"
+        ]
+      }
+    }
+  }
+}
